@@ -19,3 +19,7 @@ spec:
           ports:
             - containerPort: 80
   replicas: 3
+  selector:
+    matchLabels:
+      name: voating-app-pod
+      app: demo-voating-app
