@@ -19,3 +19,7 @@ spec:
           ports:
             - containerPort: 5432
   replicas: 1
+  selector:
+    matchLabels:
+      name: postgres-pod
+      app: demo-voating-app
